@@ -17,3 +17,4 @@ df = df[['newsId', 'title', 'summary']]#取出特定欄位
 df['link'] = df['newsId'].apply(lambda  x: 'https://m.cnyes.com/news/id/' + str(x))#建立連結
 df.to_csv('news.csv', encoding = 'utf-8-sig')
 print(df)
+#
